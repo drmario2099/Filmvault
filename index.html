@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -18,398 +19,412 @@
     --green: #4caf7d;
   }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+- { margin: 0; padding: 0; box-sizing: border-box; }
 
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'DM Mono', monospace;
-    min-height: 100vh;
-  }
+body {
+background: var(–bg);
+color: var(–text);
+font-family: ‘DM Mono’, monospace;
+min-height: 100vh;
+}
 
-  header {
-    border-bottom: 1px solid var(--border);
-    padding: 2rem 3rem;
-    display: flex;
-    align-items: flex-end;
-    gap: 2rem;
-    position: sticky;
-    top: 0;
-    background: var(--bg);
-    z-index: 100;
-  }
+header {
+border-bottom: 1px solid var(–border);
+padding: 2rem 3rem;
+display: flex;
+align-items: flex-end;
+gap: 2rem;
+position: sticky;
+top: 0;
+background: var(–bg);
+z-index: 100;
+}
 
-  h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3.5rem;
-    letter-spacing: 0.1em;
-    color: var(--accent);
-    line-height: 1;
-  }
+h1 {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: 3.5rem;
+letter-spacing: 0.1em;
+color: var(–accent);
+line-height: 1;
+}
 
-  .subtitle {
-    font-size: 0.7rem;
-    color: var(--muted);
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 0.4rem;
-  }
+.subtitle {
+font-size: 0.7rem;
+color: var(–muted);
+letter-spacing: 0.2em;
+text-transform: uppercase;
+margin-bottom: 0.4rem;
+}
 
-  .stats {
-    margin-left: auto;
-    text-align: right;
-  }
+.stats {
+margin-left: auto;
+text-align: right;
+}
 
-  .stat-num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    color: var(--accent);
-    line-height: 1;
-  }
+.stat-num {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: 2rem;
+color: var(–accent);
+line-height: 1;
+}
 
-  .stat-label {
-    font-size: 0.65rem;
-    color: var(--muted);
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-  }
+.stat-label {
+font-size: 0.65rem;
+color: var(–muted);
+letter-spacing: 0.15em;
+text-transform: uppercase;
+}
 
-  .stat-group { display: flex; gap: 2rem; }
+.stat-group { display: flex; gap: 2rem; }
 
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    min-height: calc(100vh - 110px);
-  }
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 0;
+min-height: calc(100vh - 110px);
+}
 
-  .panel {
-    border-right: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-  }
+.panel {
+border-right: 1px solid var(–border);
+display: flex;
+flex-direction: column;
+}
 
-  .panel:last-child { border-right: none; }
+.panel:last-child { border-right: none; }
 
-  .panel-header {
-    padding: 1.5rem 2rem;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    position: sticky;
-    top: 110px;
-    background: var(--bg);
-    z-index: 10;
-  }
+.panel-header {
+padding: 1.5rem 2rem;
+border-bottom: 1px solid var(–border);
+display: flex;
+align-items: center;
+gap: 1rem;
+position: sticky;
+top: 110px;
+background: var(–bg);
+z-index: 10;
+}
 
-  .panel-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.4rem;
-    letter-spacing: 0.15em;
-  }
+.panel-title {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: 1.4rem;
+letter-spacing: 0.15em;
+}
 
-  .panel-title.collection { color: var(--green); }
-  .panel-title.wishlist { color: var(--accent2); }
+.panel-title.collection { color: var(–green); }
+.panel-title.wishlist { color: var(–accent2); }
 
-  .count-badge {
-    font-size: 0.65rem;
-    padding: 0.2rem 0.6rem;
-    border-radius: 2px;
-    letter-spacing: 0.1em;
-    margin-left: auto;
-  }
+.count-badge {
+font-size: 0.65rem;
+padding: 0.2rem 0.6rem;
+border-radius: 2px;
+letter-spacing: 0.1em;
+margin-left: auto;
+}
 
-  .collection .count-badge { background: rgba(76,175,125,0.15); color: var(--green); border: 1px solid rgba(76,175,125,0.3); }
-  .wishlist .count-badge { background: rgba(196,59,59,0.15); color: var(--accent2); border: 1px solid rgba(196,59,59,0.3); }
+.collection .count-badge { background: rgba(76,175,125,0.15); color: var(–green); border: 1px solid rgba(76,175,125,0.3); }
+.wishlist .count-badge { background: rgba(196,59,59,0.15); color: var(–accent2); border: 1px solid rgba(196,59,59,0.3); }
 
-  .search-bar {
-    padding: 0.8rem 2rem;
-    border-bottom: 1px solid var(--border);
-    background: var(--bg);
-  }
+.search-bar {
+padding: 0.8rem 2rem;
+border-bottom: 1px solid var(–border);
+background: var(–bg);
+}
 
-  .search-bar input {
-    width: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    color: var(--text);
-    letter-spacing: 0.05em;
-  }
+.search-bar input {
+width: 100%;
+background: transparent;
+border: none;
+outline: none;
+font-family: ‘DM Mono’, monospace;
+font-size: 0.75rem;
+color: var(–text);
+letter-spacing: 0.05em;
+}
 
-  .search-bar input::placeholder { color: var(--muted); }
+.search-bar input::placeholder { color: var(–muted); }
 
-  .film-list {
-    overflow-y: auto;
-    flex: 1;
-    background: var(--bg);
-  }
+.film-list {
+overflow-y: auto;
+flex: 1;
+background: var(–bg);
+}
 
-  .film-item {
-    display: flex;
-    align-items: center;
-    padding: 0.85rem 2rem;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-    gap: 1rem;
-    transition: background 0.15s;
-    cursor: default;
-    background: var(--bg);
-  }
+.film-item {
+display: flex;
+align-items: center;
+padding: 0.85rem 2rem;
+border-bottom: 1px solid rgba(255,255,255,0.04);
+gap: 1rem;
+transition: background 0.15s;
+cursor: default;
+background: var(–bg);
+}
 
-  .film-item:hover { background: var(--surface); }
+.film-item:hover { background: var(–surface); }
 
-  .film-item.moving {
-    animation: flashGreen 0.5s ease;
-  }
+.film-item.moving {
+animation: flashGreen 0.5s ease;
+}
 
-  @keyframes flashGreen {
-    0% { background: rgba(76,175,125,0.3); }
-    100% { background: transparent; }
-  }
+@keyframes flashGreen {
+0% { background: rgba(76,175,125,0.3); }
+100% { background: transparent; }
+}
 
-  .film-index {
-    font-size: 0.6rem;
-    color: var(--muted);
-    width: 2rem;
-    text-align: right;
-    flex-shrink: 0;
-  }
+.film-index {
+font-size: 0.6rem;
+color: var(–muted);
+width: 2rem;
+text-align: right;
+flex-shrink: 0;
+}
 
-  .film-info { flex: 1; min-width: 0; }
+.film-info { flex: 1; min-width: 0; }
 
-  .film-title {
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+.film-title {
+font-size: 0.8rem;
+letter-spacing: 0.05em;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
 
-  .film-director {
-    font-size: 0.65rem;
-    color: var(--muted);
-    letter-spacing: 0.05em;
-    font-style: italic;
-    margin-top: 0.2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+.film-director {
+font-size: 0.65rem;
+color: var(–muted);
+letter-spacing: 0.05em;
+font-style: italic;
+margin-top: 0.2rem;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
 
-  /* Wishlist checkbox */
-  .wish-check {
-    width: 18px;
-    height: 18px;
-    border: 1.5px solid var(--border);
-    border-radius: 2px;
-    flex-shrink: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-    position: relative;
-    overflow: hidden;
-  }
+/* Wishlist checkbox */
+.wish-check {
+width: 18px;
+height: 18px;
+border: 1.5px solid var(–border);
+border-radius: 2px;
+flex-shrink: 0;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.2s;
+position: relative;
+overflow: hidden;
+}
 
-  .wish-check:hover {
-    border-color: var(--green);
-    background: rgba(76,175,125,0.1);
-  }
+.wish-check:hover {
+border-color: var(–green);
+background: rgba(76,175,125,0.1);
+}
 
-  .wish-check::after {
-    content: '✓';
-    font-size: 0.7rem;
-    color: var(--green);
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
+.wish-check::after {
+content: ‘✓’;
+font-size: 0.7rem;
+color: var(–green);
+opacity: 0;
+transition: opacity 0.2s;
+}
 
-  .wish-check:hover::after { opacity: 0.5; }
+.wish-check:hover::after { opacity: 0.5; }
 
-  /* Collection remove */
-  .remove-btn {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--muted);
-    font-size: 0.7rem;
-    border-radius: 2px;
-    transition: all 0.2s;
-    opacity: 0;
-  }
+/* Collection remove */
+.remove-btn {
+width: 18px;
+height: 18px;
+flex-shrink: 0;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(–muted);
+font-size: 0.7rem;
+border-radius: 2px;
+transition: all 0.2s;
+opacity: 0;
+}
 
-  .film-item:hover .remove-btn { opacity: 1; }
-  .remove-btn:hover { color: var(--accent2); background: rgba(196,59,59,0.1); }
+.film-item:hover .remove-btn { opacity: 1; }
+.remove-btn:hover { color: var(–accent2); background: rgba(196,59,59,0.1); }
 
-  .empty-state {
-    padding: 4rem 2rem;
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-  }
+.empty-state {
+padding: 4rem 2rem;
+text-align: center;
+color: var(–muted);
+font-size: 0.75rem;
+letter-spacing: 0.1em;
+}
 
-  .notification {
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%) translateY(100px);
-    background: var(--surface2);
-    border: 1px solid var(--green);
-    color: var(--green);
-    padding: 0.8rem 1.5rem;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    border-radius: 2px;
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    z-index: 999;
-    white-space: nowrap;
-  }
+.notification {
+position: fixed;
+bottom: 2rem;
+left: 50%;
+transform: translateX(-50%) translateY(100px);
+background: var(–surface2);
+border: 1px solid var(–green);
+color: var(–green);
+padding: 0.8rem 1.5rem;
+font-size: 0.75rem;
+letter-spacing: 0.1em;
+border-radius: 2px;
+transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+z-index: 999;
+white-space: nowrap;
+}
 
-  .notification.show {
-    transform: translateX(-50%) translateY(0);
-  }
+.notification.show {
+transform: translateX(-50%) translateY(0);
+}
 
-  /* Add Film Modal */
-  .modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.85);
-    z-index: 200;
-    align-items: center;
-    justify-content: center;
-  }
-  .modal-overlay.open { display: flex; }
-  .modal {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    width: 90%;
-    max-width: 420px;
-    padding: 2rem;
-    border-radius: 4px;
-  }
-  .modal-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.4rem;
-    letter-spacing: 0.15em;
-    color: var(--accent);
-    margin-bottom: 1.5rem;
-  }
-  .modal-input {
-    width: 100%;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    outline: none;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.8rem;
-    color: var(--text);
-    padding: 0.75rem 1rem;
-    letter-spacing: 0.05em;
-    border-radius: 2px;
-  }
-  .modal-input:focus { border-color: var(--accent); }
-  .suggestions {
-    border: 1px solid var(--border);
-    border-top: none;
-    background: var(--bg);
-    max-height: 280px;
-    overflow-y: auto;
-  }
-  .suggestion-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.6rem 1rem;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-    transition: background 0.1s;
-  }
-  .suggestion-item:hover { background: var(--surface); }
-  .suggestion-poster {
-    width: 32px;
-    height: 48px;
-    object-fit: cover;
-    border-radius: 2px;
-    flex-shrink: 0;
-    background: var(--border);
-  }
-  .suggestion-info { flex: 1; min-width: 0; }
-  .suggestion-title {
-    font-size: 0.75rem;
-    letter-spacing: 0.03em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .suggestion-year { font-size: 0.65rem; color: var(--muted); margin-top: 0.15rem; }
-  .suggestion-loading { padding: 1rem; text-align: center; font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; }
-  .modal-target { display: flex; gap: 0.5rem; margin-top: 1rem; }
-  .target-btn {
-    flex: 1;
-    padding: 0.6rem;
-    border: 1px solid var(--border);
-    background: transparent;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    border-radius: 2px;
-    transition: all 0.2s;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-  .target-btn.active-coll { border-color: var(--green); color: var(--green); background: rgba(76,175,125,0.1); }
-  .target-btn.active-wish { border-color: var(--accent2); color: var(--accent2); background: rgba(196,59,59,0.1); }
-  .modal-footer { display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem; }
-  .btn {
-    padding: 0.6rem 1.2rem;
-    border: 1px solid var(--border);
-    background: transparent;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    border-radius: 2px;
-    color: var(--muted);
-    text-transform: uppercase;
-    transition: all 0.2s;
-  }
-  .btn:hover { color: var(--text); border-color: var(--text); }
-  .btn.primary { border-color: var(--accent); color: var(--accent); }
-  .btn.primary:hover { background: rgba(232,197,71,0.1); }
-  .add-btn {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    padding: 0.3rem 0.8rem;
-    cursor: pointer;
-    border-radius: 2px;
-    transition: all 0.2s;
-    text-transform: uppercase;
-  }
-  .add-btn:hover { color: var(--accent); border-color: var(--accent); }
+.film-title.editing {
+background: transparent;
+border: none;
+border-bottom: 1px solid var(–accent);
+outline: none;
+font-family: ‘DM Mono’, monospace;
+font-size: 0.8rem;
+letter-spacing: 0.05em;
+color: var(–text);
+width: 100%;
+padding: 0;
+}
 
-  @media (max-width: 768px) {
-    header { padding: 1.5rem; flex-wrap: wrap; }
-    h1 { font-size: 2.5rem; }
-    .container { grid-template-columns: 1fr; }
-    .panel { border-right: none; border-bottom: 1px solid var(--border); min-height: 50vh; }
-    .panel-header { top: 0; }
-    .film-list { max-height: 60vh; }
-  }
+/* Add Film Modal */
+.modal-overlay {
+display: none;
+position: fixed;
+inset: 0;
+background: rgba(0,0,0,0.85);
+z-index: 200;
+align-items: center;
+justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+background: var(–surface2);
+border: 1px solid var(–border);
+width: 90%;
+max-width: 420px;
+padding: 2rem;
+border-radius: 4px;
+}
+.modal-title {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: 1.4rem;
+letter-spacing: 0.15em;
+color: var(–accent);
+margin-bottom: 1.5rem;
+}
+.modal-input {
+width: 100%;
+background: var(–bg);
+border: 1px solid var(–border);
+outline: none;
+font-family: ‘DM Mono’, monospace;
+font-size: 0.8rem;
+color: var(–text);
+padding: 0.75rem 1rem;
+letter-spacing: 0.05em;
+border-radius: 2px;
+}
+.modal-input:focus { border-color: var(–accent); }
+.suggestions {
+border: 1px solid var(–border);
+border-top: none;
+background: var(–bg);
+max-height: 280px;
+overflow-y: auto;
+}
+.suggestion-item {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+padding: 0.6rem 1rem;
+cursor: pointer;
+border-bottom: 1px solid rgba(255,255,255,0.04);
+transition: background 0.1s;
+}
+.suggestion-item:hover { background: var(–surface); }
+.suggestion-poster {
+width: 32px;
+height: 48px;
+object-fit: cover;
+border-radius: 2px;
+flex-shrink: 0;
+background: var(–border);
+}
+.suggestion-info { flex: 1; min-width: 0; }
+.suggestion-title {
+font-size: 0.75rem;
+letter-spacing: 0.03em;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.suggestion-year { font-size: 0.65rem; color: var(–muted); margin-top: 0.15rem; }
+.suggestion-loading { padding: 1rem; text-align: center; font-size: 0.7rem; color: var(–muted); letter-spacing: 0.1em; }
+.modal-target { display: flex; gap: 0.5rem; margin-top: 1rem; }
+.target-btn {
+flex: 1;
+padding: 0.6rem;
+border: 1px solid var(–border);
+background: transparent;
+font-family: ‘DM Mono’, monospace;
+font-size: 0.65rem;
+letter-spacing: 0.1em;
+cursor: pointer;
+border-radius: 2px;
+transition: all 0.2s;
+text-transform: uppercase;
+color: var(–muted);
+}
+.target-btn.active-coll { border-color: var(–green); color: var(–green); background: rgba(76,175,125,0.1); }
+.target-btn.active-wish { border-color: var(–accent2); color: var(–accent2); background: rgba(196,59,59,0.1); }
+.modal-footer { display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem; }
+.btn {
+padding: 0.6rem 1.2rem;
+border: 1px solid var(–border);
+background: transparent;
+font-family: ‘DM Mono’, monospace;
+font-size: 0.7rem;
+letter-spacing: 0.1em;
+cursor: pointer;
+border-radius: 2px;
+color: var(–muted);
+text-transform: uppercase;
+transition: all 0.2s;
+}
+.btn:hover { color: var(–text); border-color: var(–text); }
+.btn.primary { border-color: var(–accent); color: var(–accent); }
+.btn.primary:hover { background: rgba(232,197,71,0.1); }
+.add-btn {
+background: transparent;
+border: 1px solid var(–border);
+color: var(–muted);
+font-family: ‘DM Mono’, monospace;
+font-size: 0.65rem;
+letter-spacing: 0.1em;
+padding: 0.3rem 0.8rem;
+cursor: pointer;
+border-radius: 2px;
+transition: all 0.2s;
+text-transform: uppercase;
+}
+.add-btn:hover { color: var(–accent); border-color: var(–accent); }
+
+@media (max-width: 768px) {
+header { padding: 1.5rem; flex-wrap: wrap; }
+h1 { font-size: 2.5rem; }
+.container { grid-template-columns: 1fr; }
+.panel { border-right: none; border-bottom: 1px solid var(–border); min-height: 50vh; }
+.panel-header { top: 0; }
+.film-list { max-height: 60vh; }
+}
 </style>
+
 </head>
 <body>
 
@@ -419,6 +434,7 @@
     <h1>Film Vault</h1>
   </div>
   <div class="stat-group stats">
+    <div style="font-size:0.6rem;color:var(--muted);letter-spacing:0.1em;align-self:center" id="syncStatus"></div>
     <div>
       <div class="stat-num" id="collectionCount">0</div>
       <div class="stat-label">Collected</div>
@@ -841,14 +857,59 @@ const initialWishlist = [
   { title: "Zodiac", director: "David Fincher" },
 ];
 
-// Load from localStorage or use initial data
-let collection = JSON.parse(localStorage.getItem(COLLECTION_KEY)) || initialCollection;
-let wishlist = JSON.parse(localStorage.getItem(WISHLIST_KEY)) || initialWishlist;
+// Google Sheets API
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbz8QhTyhTNYHwh8a3LamzUdzzPqZ8-2qBcis_qja05AFjtFAinC5JnO1I48YNrQWQ/exec';
 
-function save() {
-  localStorage.setItem(COLLECTION_KEY, JSON.stringify(collection));
-  localStorage.setItem(WISHLIST_KEY, JSON.stringify(wishlist));
+let collection = [];
+let wishlist = [];
+let isSyncing = false;
+
+function showSyncing(on) {
+  isSyncing = on;
+  document.getElementById('syncStatus').textContent = on ? '↻ syncing...' : '';
 }
+
+async function loadFromSheet() {
+  showSyncing(true);
+  try {
+    const res = await fetch(SHEET_URL + '?action=get');
+    const data = await res.json();
+    if (Array.isArray(data) && data.length > 0) {
+      collection = data.filter(f => f.list === 'collection').map(f => ({ title: f.title, director: f.director, year: f.year || '' }));
+      wishlist = data.filter(f => f.list === 'wishlist').map(f => ({ title: f.title, director: f.director, year: f.year || '' }));
+    }
+    // First time — seed with initial data
+    if (collection.length === 0 && wishlist.length === 0) {
+      collection = initialCollection;
+      wishlist = initialWishlist;
+      await syncToSheet();
+    }
+  } catch(e) {
+    console.error('Load error', e);
+    collection = initialCollection;
+    wishlist = initialWishlist;
+  }
+  showSyncing(false);
+  renderAll();
+}
+
+async function syncToSheet() {
+  showSyncing(true);
+  try {
+    const allFilms = [
+      ...collection.map(f => ({ ...f, list: 'collection' })),
+      ...wishlist.map(f => ({ ...f, list: 'wishlist' }))
+    ];
+    const encoded = encodeURIComponent(JSON.stringify(allFilms));
+    await fetch(SHEET_URL + '?action=sync&data=' + encoded);
+  } catch(e) {
+    console.error('Sync error', e);
+  }
+  showSyncing(false);
+}
+
+function save() { syncToSheet(); }
+function saveData() { syncToSheet(); }
 
 function showNotification(msg) {
   const el = document.getElementById('notification');
@@ -891,7 +952,7 @@ function renderList(films, containerId, type, searchVal) {
   }
 
   container.innerHTML = filtered.map((film, i) => `
-    <div class="film-item" id="film-${film.title.replace(/[^a-z0-9]/gi,'_')}">
+    <div class="film-item" id="film-${film.title.replace(/[^a-z0-9]/gi,'_')}" ondblclick="startEdit(this, '${film.title.replace(/'/g, "\\'")}', '${type}')">
       <span class="film-index">${String(i + 1).padStart(2, '0')}</span>
       <div class="film-info">
         <div class="film-title">${film.title}</div>
@@ -918,7 +979,39 @@ function renderAll() {
   document.getElementById('wishBadge').textContent = `${wishlist.length} films`;
 }
 
-renderAll();
-</script>
+function startEdit(itemEl, oldTitle, listType) {
+  const titleEl = itemEl.querySelector('.film-title');
+  if (titleEl.querySelector('input')) return;
+  const input = document.createElement('input');
+  input.className = 'film-title editing';
+  input.value = oldTitle;
+  titleEl.innerHTML = '';
+  titleEl.appendChild(input);
+  input.focus();
+  input.select();
+
+  function saveEdit() {
+    const newTitle = input.value.trim();
+    if (newTitle && newTitle !== oldTitle) {
+      const list = listType === 'collection' ? collection : wishlist;
+      const film = list.find(f => f.title === oldTitle);
+      if (film) {
+        film.title = newTitle;
+        list.sort((a, b) => a.title.localeCompare(b.title));
+        saveData();
+        showNotification(`✎ Renamed to "${newTitle}"`);
+      }
+    }
+    renderAll();
+  }
+
+  input.addEventListener('blur', saveEdit);
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') input.blur();
+    if (e.key === 'Escape') { input.value = oldTitle; input.blur(); }
+  });
+}
+
+loadFromSheet();
 </body>
 </html>
